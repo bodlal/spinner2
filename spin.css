@@ -1,0 +1,532 @@
+.spinner-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+.spinner {
+    display: block;
+    margin-left: -355px;
+    width: 600px;
+}
+
+.pointer {
+    width: 100px;
+    display: block;
+    margin: -35px 0 0 0;
+    top: 50%;
+    left: 200px;
+    position: absolute;
+}
+
+img {
+    display: inline;
+}
+
+.spinAround {
+    -webkit-animation: spin 6.2s;
+    -moz-animation: spin 6.2s;
+    -ms-animation: spin 6.2s;
+    -o-animation: spin 6.2s;
+    animation: spin 6.2s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -ms-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards; /*Chrome 16+, Safari 4+*/
+    -moz-animation-fill-mode: forwards; /*FF 5+*/
+    -o-animation-fill-mode: forwards; /*Not implemented yet*/
+    -ms-animation-fill-mode: forwards; /*IE 10+*/
+    animation-fill-mode: forwards; /*when the spec is finished*/
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(3029deg);
+        -ms-transform: rotate(3029deg);
+        -moz-transform: rotate(3029deg);
+        -o-transform: rotate(3029deg);
+        transform: rotate(3029deg);
+    }
+
+    95% {
+        -webkit-transform: rotate(3027deg);
+        -ms-transform: rotate(3027deg);
+        -moz-transform: rotate(3027deg);
+        -o-transform: rotate(3027deg);
+        transform: rotate(3027deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(3028deg);
+        -ms-transform: rotate(3028deg);
+        -moz-transform: rotate(3028deg);
+        -o-transform: rotate(3028deg);
+        transform: rotate(3028deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(3029deg);
+        -ms-transform: rotate(3029deg);
+        -moz-transform: rotate(3029deg);
+        -o-transform: rotate(3029deg);
+        transform: rotate(3029deg);
+    }
+
+    95% {
+        -webkit-transform: rotate(3027deg);
+        -ms-transform: rotate(3027deg);
+        -moz-transform: rotate(3027deg);
+        -o-transform: rotate(3027deg);
+        transform: rotate(3027deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(3028deg);
+        -ms-transform: rotate(3028deg);
+        -moz-transform: rotate(3028deg);
+        -o-transform: rotate(3028deg);
+        transform: rotate(3028deg);
+    }
+}
+
+@-ms-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(3029deg);
+        -ms-transform: rotate(3029deg);
+        -moz-transform: rotate(3029deg);
+        -o-transform: rotate(3029deg);
+        transform: rotate(3029deg);
+    }
+
+    95% {
+        -webkit-transform: rotate(3027deg);
+        -ms-transform: rotate(3027deg);
+        -moz-transform: rotate(3027deg);
+        -o-transform: rotate(3027deg);
+        transform: rotate(3027deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(3028deg);
+        -ms-transform: rotate(3028deg);
+        -moz-transform: rotate(3028deg);
+        -o-transform: rotate(3028deg);
+        transform: rotate(3028deg);
+    }
+}
+
+.phase--2 {
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+
+.restrict-width {
+    margin: 0 auto;
+}
+
+.padding-side {
+    padding: 0 5px;
+}
+
+
+.comments {
+    width: 100%;
+    color: #ccc;
+    margin: 0 auto 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #e1e2e3;
+    border-radius: 4px;
+    background-color: #f6f7f9;
+    padding: 0 0 4px;
+    margin-top: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.comments.mobile-visible {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .comments.mobile-visible {
+        display: block;
+    }
+}
+
+.comments * {
+    font-size: 12px;
+}
+
+.date {
+    color: #ccc;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.itemc {
+    margin-top: 15px;
+}
+
+.itemc img {
+    width: 15%;
+    float: left;
+}
+
+.rightcom {
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 85%;
+    border-bottom: 1px solid #000;
+    position: relative;
+    background:#fff;
+    padding:6px;
+    color:#000;
+
+}
+
+.comments a {
+    color: #fff;
+}
+
+textarea {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.comments input {
+    margin-left: 15px;
+}
+
+/* COMMENTS */
+
+.fbcoms {
+    font-family: Tahoma, Verdana, sans-serif;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.totlikes {
+    /*margin-top: 3px;
+    background-color: #eeeff4;
+    padding: 5px 0 5px 23px;
+    background-image: url(../img//media/mainstream/us/desc/survey1/like.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;*/
+}
+
+.totlikes {
+    border-top: 1px solid #e1e2e3;
+    margin: 0;
+    padding: 13px 12px 7px;
+    background-color: #f6f7f9;
+}
+
+.totlikes .icon {
+    margin-right: -3px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-image: url(../img/facebook-icons2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -399px;
+    cursor: pointer;
+}
+
+.totlikes .icon2 {background-position: 0 -348px;}
+.totlikes .icon3 {background-position: 0 -314px;}
+
+.totlikes .names {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #365899;
+    margin-left: 6px;
+    vertical-align: 14%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.totlikes .names:hover {
+    text-decoration: underline;
+}
+
+.fbblue {
+    color: #3c5a96;
+}
+
+.buttons {
+    padding: 9px 12px;
+}
+
+.buttons span {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #616770;
+    cursor: pointer;
+    line-height: 14px;
+    margin-right: 20px;
+    padding: 4px 4px 4px 0;
+}
+
+.buttons span:before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    min-width: 18px;
+    width: 18px;
+    background-image: url(../img/facebook-icons.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -19px -212px;
+    vertical-align: -30%;
+    margin-right: 5px;
+}
+
+.buttons span.comment:before {background-position: -19px -174px;}
+.buttons span.share:before {background-position: -19px -269px;}
+
+.buttons span:hover {
+    text-decoration: underline;
+}
+
+.viewmore {
+    margin-top: 3px;
+    background-color: #eeeff4;
+    padding: 5px 5px 5px 23px;
+    background-image: url(../img//media/mainstream/us/desc/survey1/arrow.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+}
+
+.left {
+    cursor: pointer;
+    float: left;
+    color: #3c5a96;
+}
+
+.left:hover {
+    text-decoration: underline;
+}
+
+.right {
+    color: #7d7d7f;
+    float: right;
+}
+
+.item {
+    position: relative;
+    background-color: #f6f7f9;
+    padding: 5px 5px 5px 50px;
+    min-height: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.item .profileimg {
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.comtxt {
+    line-height: 16px;
+    color:#000;
+    font-weight:normal;
+}
+
+.name {
+    color: #3c5a96;
+    font-weight: bold;
+}
+
+.ago {
+    font-size: 13px;
+    font-weight: 400;
+    color: #90949c;
+}
+
+.fblike, .fbreply {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #365899;
+    cursor: pointer;
+}
+
+.fblike:hover, .fbreply:hover {
+    text-decoration: underline;
+}
+
+.combot {
+    padding-top: 5px;
+    color: #365899;
+}
+
+.combot .totlikes {
+    display: inline-block;
+    border-top: none;
+    margin: 0;
+    padding: 0 4px 0 0;
+    vertical-align: -16%;
+}
+
+.clickhere {
+    font-weight: bold;
+    padding: 30px 10px 5px;
+    line-height: 18px;
+}
+
+.likes {
+    color: #3c5a96;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.fbimg {
+    background-color: #fff;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    max-width: 210px;
+    width: 100%;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    margin: 10px 0 5px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.hidden .comtxt, .hidden .combot{
+    display: none;
+}
+
+#cdtime {color: red;}
+
+.button3 {
+    background: -webkit-linear-gradient(#65ab53, #c6c6c6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#65ab53, #578843 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#65ab53, #578843 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#65ab53, #578843 ); /* Standard syntax */
+    text-align:center;
+    color:#fff;
+    font-size:20px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border:1px #9c9c9c solid;
+
+}
+
+a.claim {
+    color:#fff;
+    text-decoration:none;
+}
+
+.slot-hidden {
+    display: none;
+}
+
+.slot {
+    padding-top: 50px;
+    width: 90%;
+}
+
+.arrow-left {
+    position: relative;
+    float: left;
+    width: 35px;
+    margin: -15px -36px;
+}
+
+.arrow-right {
+    position: relative;
+    float: right;
+    width: 35px;
+    margin: -15px -36px;
+}
+
+@media (min-width: 680px){
+.spinner {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    }
+.pointer {
+    width: 100px;
+    display: block;
+    margin: -35px 0 0 250px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    }
+}
